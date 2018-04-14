@@ -2128,7 +2128,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #70afa1;
+  background: #3225ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3034,7 +3034,7 @@ embed {
   width: 100%;
 }
 .site-meta {
-  background-color: rgba(3,142,222,0.8);
+  background-color: #0c537b;
 }
 .brand {
   background-color: rgba(255,255,255,0);
@@ -3042,18 +3042,18 @@ embed {
   padding: 0px;
 }
 .site-title {
-  font-size: 51px;
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
-  line-height: 80px;
+  line-height: 30px;
   letter-spacing: 3px;
 }
 .site-subtitle {
-  margin: 3px 0px;
+  margin: 3px 50px 2px 50px;
   font-size: 16px;
   letter-spacing: 1px;
   padding-bottom: 11px;
-  font-weight: bold;
+  font-weight: normal;
   color: #fff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -3791,7 +3791,7 @@ code.description {
 }
 @media (max-width: 767px) {
   .site-title {
-    font-size: 46px !important;
+    font-size: 30px !important;
     letter-spacing: 0px !important;
   }
   .site-subtitle {
