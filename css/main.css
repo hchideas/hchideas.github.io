@@ -1021,7 +1021,7 @@ pre .javascript .function {
   width: 1.285714285714286em;
 }
 .post-body .tabs ul.nav-tabs li.tab.active {
-  border-top: 3px solid #fc6423;
+  border-top: 3px solid #4ca6b1;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   background-color: #fff;
@@ -1036,7 +1036,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: #000;
+  color: rgba(255,241,10,0.9);
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -2128,7 +2128,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff954a;
+  background: #814e42;
 }
 .links-of-blogroll {
   font-size: 13px;
