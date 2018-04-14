@@ -2128,7 +2128,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #59a6f4;
+  background: #c8cf53;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3006,6 +3006,12 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.category-list ul {
+  list-style: none;
+}
+.category-list ul li:before {
+  content: '➢ ';
 }
 .headband {
   height: 1px;
