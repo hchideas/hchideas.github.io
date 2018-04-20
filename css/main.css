@@ -792,9 +792,7 @@ pre .javascript .function {
   float: left;
 }
 .page-post-detail .post-body .group-picture-column {
-  float: none;
   margin-top: 10px;
-  width: auto !important;
 }
 .page-post-detail .post-body .group-picture-column img {
   margin: 0 auto;
@@ -1036,7 +1034,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: rgba(255,241,10,0.9);
+  color: #0d89d2;
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -2128,7 +2126,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6ca795;
+  background: #c4d63b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3218,7 +3216,7 @@ code {
   margin: 0px 4px;
   padding: 2px 4px;
   word-wrap: break-word;
-  color: #1c1c21;
+  color: #018477;
   background: #e3f2fd;
   border-radius: 3px;
   font-size: 15px;
@@ -3861,9 +3859,9 @@ p {
 }
 .post-body p a {
   padding: 2px 6px;
-  color: #fff;
+  color: #0d89d2;
   border-radius: 5px;
-  background-color: rgba(0,128,144,0.7);
+  background-color: #e9f2f9;
   word-wrap: break-word;
   white-space: pre;
   margin: 1px;
@@ -3876,16 +3874,16 @@ p {
   font: normal normal normal 15px/1 FontAwesome;
 }
 .post-body p a:hover {
-  color: #fff159;
+  color: #0037ff;
 }
 .post-body p a.fancy-ctn.fancybox::before {
   display: none;
 }
 .post-body li a {
   padding: 2px 6px;
-  color: #fff;
+  color: #0d89d2;
   border-radius: 5px;
-  background-color: rgba(0,128,144,0.7);
+  background-color: #e9f2f9;
   word-wrap: break-word;
   white-space: pre;
   margin: 1px;
@@ -3898,7 +3896,7 @@ p {
   font: normal normal normal 15px/1 FontAwesome;
 }
 .post-body li a:hover {
-  color: #fff159;
+  color: #0037ff;
 }
 .post-body li a.fancy-ctn.fancybox::before {
   display: none;
@@ -3928,11 +3926,11 @@ p {
 blockquote.yy a {
   padding: 2px 6px;
   border-radius: 5px;
-  background-color: rgba(0,128,144,0.7);
+  background-color: #e9f2f9;
   word-wrap: break-word;
   white-space: pre;
   margin: 1px;
-  color: #fff;
+  color: #0d89d2;
   text-decoration: none;
 }
 blockquote.yy a::before {
@@ -3942,15 +3940,16 @@ blockquote.yy a::before {
   font: normal normal normal 15px/1 FontAwesome;
 }
 blockquote.yy a:hover {
-  color: #fff159;
+  color: #0037ff;
 }
 blockquote.yy a.fancy-ctn.fancybox::before {
   display: none;
 }
 .btn {
-  color: #fff !important;
+  color: #007dc5 !important;
   text-decoration: none !important;
   border: 2px solid rgba(76,166,177,0.5) !important;
+  background: #f1f9ff;
 }
 .post-body p a.fancybox {
   color: #fff;
