@@ -2126,7 +2126,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c4d63b;
+  background: #faf696;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3910,6 +3910,10 @@ p {
   margin: 1px;
   color: #fff;
   text-decoration: none;
+}
+.post-body td a,
+btn {
+  color: #fff !important;
 }
 .post-body td a::before {
   padding-right: 6px;
