@@ -76,13 +76,8 @@
   
 
   
-    
-    
-  
 
   
-    
-      
     
 
     
@@ -97,7 +92,7 @@
   
     
     
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -159,6 +154,16 @@
 
 
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('密码在小神童那里，去找他要(^o^)') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <meta name="description" content="专研如何躺着赚钱">
 <meta name="keywords" content="小神童,比特币,区块链,币圏,链圈,赞我,endorsit">
 <meta property="og:type" content="website">
@@ -412,7 +417,7 @@
         
           
         
-        嗯..! 目前共计 11 篇日志。 继续努力。
+        嗯..! 目前共计 8 篇日志。 继续努力。
       </span>
       
 
@@ -687,42 +692,10 @@
         
 
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/04-xiaoshentong.html" itemprop="url">
-              
-                <span itemprop="name">Purchase token boldly, hold them for most of the time, think twice before selling out</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-04T19:56:33+08:00"
-              content="2018-02-04" >
-          02-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2016">2016</h1>
+          </div>
         
         
 
@@ -733,46 +706,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/01/26-xiaoshentong.html" itemprop="url">
+            <a class="post-title-link" href="/2016/03/30-xiaoshentong.html" itemprop="url">
               
-                <span itemprop="name">Ending for most - fierce fights saw the broken dreams and blood shed</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-01-26T22:27:22+08:00"
-              content="2018-01-26" >
-          01-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/01/22-xiaoshentong.html" itemprop="url">
-              
-                <span itemprop="name">Cryptocurrency world, the best place for average person to cash in your knowledge</span>
+                <span itemprop="name">听神童吹牛皮</span>
               
             </a>
         
@@ -780,9 +716,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-01-22T19:56:33+08:00"
-              content="2018-01-22" >
-          01-22
+              datetime="2016-03-30T03:48:58+08:00"
+              content="2016-03-30" >
+          03-30
         </time>
       </div>
 
@@ -800,10 +736,6 @@
   
 
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
 
 
 
@@ -851,7 +783,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -876,9 +808,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -969,7 +899,34 @@
           
             
           
-          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/20/2016 13:14:20");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
 
         </div>
       </section>
@@ -1008,6 +965,14 @@
 
 
 
+
+<div class="weixin-box">
+  <div class="weixin-menu">
+    <div class="weixin-hover">
+      <div class="weixin-description">微信扫一扫，订阅本博客</div>
+    </div>
+  </div>
+</div>
 
         
 <div class="busuanzi-count">

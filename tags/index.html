@@ -76,13 +76,8 @@
   
 
   
-    
-    
-  
 
   
-    
-      
     
 
     
@@ -97,7 +92,7 @@
   
     
     
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -159,6 +154,16 @@
 
 
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('密码在小神童那里，去找他要(^o^)') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <meta name="keywords" content="小神童,比特币,区块链,币圏,链圈,赞我,endorsit">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -452,7 +457,7 @@
                 目前共计 6 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/区块链/" style="font-size: 12px; color: #ccc">区块链</a> <a href="/tags/工具/" style="font-size: 12px; color: #ccc">工具</a> <a href="/tags/思维模式/" style="font-size: 12px; color: #ccc">思维模式</a> <a href="/tags/教程/" style="font-size: 12px; color: #ccc">教程</a> <a href="/tags/赞我/" style="font-size: 12px; color: #ccc">赞我</a>
+              <a href="/tags/Hexo/" style="font-size: 13px; color: #9733ee">Hexo</a> <a href="/tags/区块链/" style="font-size: 13px; color: #9733ee">区块链</a> <a href="/tags/工具/" style="font-size: 13px; color: #9733ee">工具</a> <a href="/tags/思维模式/" style="font-size: 13px; color: #9733ee">思维模式</a> <a href="/tags/教程/" style="font-size: 13px; color: #9733ee">教程</a> <a href="/tags/赞我/" style="font-size: 13px; color: #9733ee">赞我</a>
             </div>
           </div>
         
@@ -515,7 +520,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -540,9 +545,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -633,7 +636,34 @@
           
             
           
-          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/20/2016 13:14:20");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
 
         </div>
       </section>
@@ -672,6 +702,14 @@
 
 
 
+
+<div class="weixin-box">
+  <div class="weixin-menu">
+    <div class="weixin-hover">
+      <div class="weixin-description">微信扫一扫，订阅本博客</div>
+    </div>
+  </div>
+</div>
 
         
 <div class="busuanzi-count">

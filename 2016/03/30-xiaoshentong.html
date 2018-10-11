@@ -76,13 +76,8 @@
   
 
   
-    
-    
-  
 
   
-    
-      
     
 
     
@@ -97,7 +92,7 @@
   
     
     
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -159,6 +154,16 @@
 
 
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('密码在小神童那里，去找他要(^o^)') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <meta name="description" content="神童说：见证奇迹的地方……">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
@@ -175,7 +180,7 @@
 <meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f47b.png?v8">
 <meta property="og:image" content="https://yixiuer.oss-cn-shanghai.aliyuncs.com/biaoqingbao/lalala.gif">
 <meta property="og:image" content="https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/2018-04-20-032913.jpg">
-<meta property="og:updated_time" content="2018-04-20T07:47:17.000Z">
+<meta property="og:updated_time" content="2018-10-11T08:38:05.514Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="听神童吹牛皮">
 <meta name="twitter:description" content="神童说：见证奇迹的地方……">
@@ -489,9 +494,10 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">热度：</span>
                
                  <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
              </span>
           
 
@@ -516,6 +522,10 @@
       
         <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><hr></p><p class="description"><b>神童说：</b><br>见证奇迹的地方……</p><hr><p></p>
 <a id="more"></a>
+<h2 id="侧边栏的关闭"><a href="#侧边栏的关闭" class="headerlink" title="侧边栏的关闭"></a>侧边栏的关闭</h2><p>参考：<a href="https://github.com/iissnan/hexo-theme-next/issues/947" target="_blank" rel="noopener">Issue #947</a></p>
+<p>打开　<code>\themes\next\source\js\src\motion.js</code></p>
+<p>添加</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 点击侧栏以外区域时关闭侧栏</span></span><br><span class="line">$(<span class="string">'body'</span>).on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> bSidebarShow = $(<span class="string">'#sidebar'</span>).css(<span class="string">'display'</span>)===<span class="string">'block'</span> &amp;&amp; $(<span class="string">'#sidebar'</span>).width() &gt; <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">var</span> bFlag = $(e.target).parents(<span class="string">'#sidebar,.sidebar-toggle'</span>).length &gt; <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(bSidebarShow &amp;&amp; !bFlag)&#123;</span><br><span class="line">        $(<span class="string">'.sidebar-toggle-line-wrap'</span>).trigger(<span class="string">'click'</span>);</span><br><span class="line">        e.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="如何修改内容区域宽度"><a href="#如何修改内容区域宽度" class="headerlink" title="如何修改内容区域宽度"></a>如何修改内容区域宽度</h2><p>Next 对内容的宽度的设定如下：</p>
 <ul>
 <li>700px，当屏幕宽度 &lt; 1600px</li>
@@ -634,7 +644,7 @@
 <li><i class="fa fa-download fa-lg"></i> 下载变大 33%</li>
 <li><i class="fa fa-download fa-2x"></i> 下载两倍大</li>
 </ul>
-<h3 id="主题自带样式-代码块高亮"><a href="#主题自带样式-代码块高亮" class="headerlink" title="主题自带样式 代码块高亮"></a>主题自带样式 代码块高亮</h3><figure class="highlight java"><figcaption><span>java</span><a href="https://highlightjs.org/static/demo/" target="_blank" rel="noopener">代码来源</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> John Smith &lt;john.smith@example.com&gt;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">package</span> l2f.gameserver.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">L2Char</span> <span class="keyword">extends</span> <span class="title">L2Object</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Short ERROR = <span class="number">0x0001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveTo</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> z)</span> </span>&#123;</span><br><span class="line">    _ai = <span class="keyword">null</span>;</span><br><span class="line">    log(<span class="string">"Should not be called"</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="number">1</span> &gt; <span class="number">5</span>) &#123; <span class="comment">// wtf!?</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="主题自带样式-代码块高亮"><a href="#主题自带样式-代码块高亮" class="headerlink" title="主题自带样式 代码块高亮"></a>主题自带样式 代码块高亮</h3><figure class="highlight java"><figcaption><span>java</span><a href="https://highlightjs.org/static/demo/">代码来源</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> John Smith &lt;john.smith@example.com&gt;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">package</span> l2f.gameserver.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">L2Char</span> <span class="keyword">extends</span> <span class="title">L2Object</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Short ERROR = <span class="number">0x0001</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">moveTo</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> z)</span> </span>&#123;</span><br><span class="line">    _ai = <span class="keyword">null</span>;</span><br><span class="line">    log(<span class="string">"Should not be called"</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="number">1</span> &gt; <span class="number">5</span>) &#123; <span class="comment">// wtf!?</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这里指的是 <code> ```</code>代码块，而不是行内代码块（<code>`代码`</code>），它的用法如下：</p>
 <figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">```<span class="string">[language]</span> <span class="string">[title]</span> <span class="string">[url]</span> <span class="string">[link-text]</span></span><br><span class="line"></span><br><span class="line">代码</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"></span><br><span class="line"><span class="string">[language]</span> 是代码语言的名称，用来设置代码块颜色高亮，非必须；</span><br><span class="line"><span class="string">[title]</span> 是顶部左边的说明，非必须；</span><br><span class="line"><span class="string">[url]</span> 是顶部右边的超链接地址，非必须；</span><br><span class="line"><span class="string">[link text]</span> 如它的字面意思，超链接的名称，非必须。</span><br></pre></td></tr></table></figure>
 <p>亲测这 4 项应该是根据空格来分隔，而不是<code>[]</code>，故请不要加<code>[]</code>。除非如果你想写后面两个，但不想写前面两个，那么就必须加<code>[]</code>了，要这样写：<code>[] [] [url] [link text]</code>。</p>
@@ -725,30 +735,6 @@
     
 
     
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div><font face="STCAIYUN" size=3 >💞心花怒放🤗</font></div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://ws2.sinaimg.cn/large/006tNc79gy1fq1tad5blrj30w00w0dgz.jpg" alt="区块链小神童 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
-    
 
     
 
@@ -756,7 +742,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           
         </div>
       
@@ -787,8 +773,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/22-xiaoshentong.html" rel="prev" title="Cryptocurrency world, the best place for average person to cash in your knowledge">
-                Cryptocurrency world, the best place for average person to cash in your knowledge <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/01-xiaoshentong.html" rel="prev" title="Endorsit（赞我）攻略秘籍大全">
+                Endorsit（赞我）攻略秘籍大全 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -865,7 +851,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -890,9 +876,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -983,7 +967,34 @@
           
             
           
-          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/20/2016 13:14:20");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
 
         </div>
       </section>
@@ -998,7 +1009,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何修改内容区域宽度"><span class="nav-number">1.</span> <span class="nav-text">如何修改内容区域宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件最上方的参数"><span class="nav-number">2.</span> <span class="nav-text">文件最上方的参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片效果"><span class="nav-number">3.</span> <span class="nav-text">图片效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用-emoji"><span class="nav-number">4.</span> <span class="nav-text">如何使用 emoji</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐和视频"><span class="nav-number">5.</span> <span class="nav-text">插入音乐和视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">5.1.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">5.2.</span> <span class="nav-text">视频</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊地写作样式"><span class="nav-number">6.</span> <span class="nav-text">特殊地写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-FontAwesome"><span class="nav-number">6.1.</span> <span class="nav-text">主题自带样式 FontAwesome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-代码块高亮"><span class="nav-number">6.2.</span> <span class="nav-text">主题自带样式 代码块高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带文本居中引用"><span class="nav-number">6.3.</span> <span class="nav-text">自带文本居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-note-标签"><span class="nav-number">6.4.</span> <span class="nav-text">主题自带样式 note 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-label-标签"><span class="nav-number">6.5.</span> <span class="nav-text">自带样式 label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-tabs-标签"><span class="nav-number">6.6.</span> <span class="nav-text">自带样式 tabs 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-按钮"><span class="nav-number">6.7.</span> <span class="nav-text">自带样式 按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-引用"><span class="nav-number">6.8.</span> <span class="nav-text">自定义样式 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-数字块"><span class="nav-number">6.9.</span> <span class="nav-text">自定义样式 数字块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注脚"><span class="nav-number">6.10.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-教程"><span class="nav-number">6.11.</span> <span class="nav-text">Markdown 教程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏的关闭"><span class="nav-number">1.</span> <span class="nav-text">侧边栏的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何修改内容区域宽度"><span class="nav-number">2.</span> <span class="nav-text">如何修改内容区域宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件最上方的参数"><span class="nav-number">3.</span> <span class="nav-text">文件最上方的参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片效果"><span class="nav-number">4.</span> <span class="nav-text">图片效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用-emoji"><span class="nav-number">5.</span> <span class="nav-text">如何使用 emoji</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐和视频"><span class="nav-number">6.</span> <span class="nav-text">插入音乐和视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">6.1.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">6.2.</span> <span class="nav-text">视频</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊地写作样式"><span class="nav-number">7.</span> <span class="nav-text">特殊地写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-FontAwesome"><span class="nav-number">7.1.</span> <span class="nav-text">主题自带样式 FontAwesome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-代码块高亮"><span class="nav-number">7.2.</span> <span class="nav-text">主题自带样式 代码块高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带文本居中引用"><span class="nav-number">7.3.</span> <span class="nav-text">自带文本居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-note-标签"><span class="nav-number">7.4.</span> <span class="nav-text">主题自带样式 note 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-label-标签"><span class="nav-number">7.5.</span> <span class="nav-text">自带样式 label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-tabs-标签"><span class="nav-number">7.6.</span> <span class="nav-text">自带样式 tabs 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-按钮"><span class="nav-number">7.7.</span> <span class="nav-text">自带样式 按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-引用"><span class="nav-number">7.8.</span> <span class="nav-text">自定义样式 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-数字块"><span class="nav-number">7.9.</span> <span class="nav-text">自定义样式 数字块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注脚"><span class="nav-number">7.10.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-教程"><span class="nav-number">7.11.</span> <span class="nav-text">Markdown 教程</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1038,6 +1049,14 @@
 
 
 
+
+<div class="weixin-box">
+  <div class="weixin-menu">
+    <div class="weixin-hover">
+      <div class="weixin-description">微信扫一扫，订阅本博客</div>
+    </div>
+  </div>
+</div>
 
         
 <div class="busuanzi-count">

@@ -76,13 +76,8 @@
   
 
   
-    
-    
-  
 
   
-    
-      
     
 
     
@@ -97,7 +92,7 @@
   
     
     
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -159,6 +154,16 @@
 
 
 
+  <script>
+    (function(){
+        if(''){
+            if (prompt('密码在小神童那里，去找他要(^o^)') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <meta name="description" content="了解时与态的本质意义，借助不同时态形式对应行动的不同含义，能够有效的帮助我们建立动词时间性的概念思考。以下是英语动词时态含义的六大总结，来自漏屋老师。">
 <meta name="keywords" content="小神童">
 <meta property="og:type" content="article">
@@ -473,9 +478,10 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">热度：</span>
                
                  <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
              </span>
           
 
@@ -515,30 +521,6 @@
     
 
     
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div><font face="STCAIYUN" size=3 >💞心花怒放🤗</font></div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://ws2.sinaimg.cn/large/006tNc79gy1fq1tad5blrj30w00w0dgz.jpg" alt="区块链小神童 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
-    
 
     
 
@@ -546,7 +528,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/思维模式/" rel="tag"># 思维模式</a>
+            <a href="/tags/思维模式/" rel="tag"><i class="fa fa-tag"></i> 思维模式</a>
           
         </div>
       
@@ -650,7 +632,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -675,9 +657,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -768,7 +748,34 @@
           
             
           
-          
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/20/2016 13:14:20");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
 
         </div>
       </section>
@@ -807,6 +814,14 @@
 
 
 
+
+<div class="weixin-box">
+  <div class="weixin-menu">
+    <div class="weixin-hover">
+      <div class="weixin-description">微信扫一扫，订阅本博客</div>
+    </div>
+  </div>
+</div>
 
         
 <div class="busuanzi-count">
