@@ -3,12 +3,15 @@
   <entry>
     <title><![CDATA[李笑来录音门事件]]></title>
     <url>%2F2018%2F07%2F04%2Flixiaolai.html</url>
-    <content type="text"><![CDATA[神童说：干货很多的录音 var ap = new APlayer({ element: document.getElementById("aplayer-HnQPfKVa"), narrow: false, autoplay: false, showlrc: false, music: { title: "录音门", author: "李笑来", url: "https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/m4a/%E6%9D%8E%E7%AC%91%E6%9D%A5%E7%BB%9D%E5%AF%86%E5%BD%95%E9%9F%B3.m4a", pic: "https://ws4.sinaimg.cn/large/006tNc79gy1fsxlzdvsdzj30ks0io3zl.jpg", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); 点击显/隐内容 1something you want to fold, include code block.]]></content>
+    <content type="text"><![CDATA[神童说：干货很多的录音 var ap = new APlayer({ element: document.getElementById("aplayer-JhMiYZhv"), narrow: false, autoplay: false, showlrc: false, music: { title: "录音门", author: "李笑来", url: "https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/m4a/%E6%9D%8E%E7%AC%91%E6%9D%A5%E7%BB%9D%E5%AF%86%E5%BD%95%E9%9F%B3.m4a", pic: "https://ws4.sinaimg.cn/large/006tNc79gy1fsxlzdvsdzj30ks0io3zl.jpg", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); 点击显/隐内容 1something you want to fold, include code block.]]></content>
   </entry>
   <entry>
     <title><![CDATA[工具癖]]></title>
     <url>%2F2018%2F05%2F27%2Ftoolkit.html</url>
     <content type="text"><![CDATA[神童说：工欲善其事必先利其器 EOS浏览器 快搜 音乐搜索器 lrc歌词编辑器 文本十六进制转换 SEO综合查询 - 站长工具 微信视频在线视频下载服务 轻松玩转PDF Google 文档 QQ群成员导出、QQ群爬虫、微信通讯录导出、微信群成员导出 在线文本去重复工具 谷歌开发的全球收音机]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
       <tags>
         <tag>效率</tag>
       </tags>
