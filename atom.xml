@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://coinshen.com/"/>
-  <updated>2018-12-24T20:25:46.178Z</updated>
+  <updated>2018-12-24T20:53:19.044Z</updated>
   <id>https://coinshen.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>少数人的早餐</title>
+    <link href="https://coinshen.com/huangchuanhui.html"/>
+    <id>https://coinshen.com/huangchuanhui.html</id>
+    <published>2018-12-24T20:39:09.000Z</published>
+    <updated>2018-12-24T20:53:19.044Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>哈喽～我是黄传辉 😸️</p><a id="more"></a><p>一生凭借“黄氏杠杆”走天涯。</p><p>如果你想了解如何在<code>健康-家庭-社交-工作-投资</code>中巧借杠杆完成跃迁，提升个人竞争力，欢迎来我的微信公众号“少数人的早餐”啃早点。</p><p>我特地开辟了这个“心里话”板块，每天写一些碎碎念，只开放给微信生态上的朋友。</p><p>在微信公众号「少数人的早餐」菜单栏即可查看“心里话”。</p><p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fyig7z3oyyj30v60piq44.jpg" width="300" height="200"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;哈喽～我是黄传辉 😸️&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>黄传辉）吾虽浪迹天涯，却未迷失本心</title>
@@ -67,7 +85,7 @@
     <published>2018-07-04T02:08:17.000Z</published>
     <updated>2018-12-24T18:44:33.564Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><hr></p><p class="description"><b>神童说：</b><br>干货很多的录音</p><hr><p></p><a id="more"></a>        <div id="aplayer-bxYoqYNw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-bxYoqYNw"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "录音门",              author: "李笑来",              url: "https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/m4a/%E6%9D%8E%E7%AC%91%E6%9D%A5%E7%BB%9D%E5%AF%86%E5%BD%95%E9%9F%B3.m4a",              pic: "https://ws4.sinaimg.cn/large/006tNc79gy1fsxlzdvsdzj30ks0io3zl.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><hr><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold"><p><a href="https://ws2.sinaimg.cn/large/006tNbRwly1fw5i5ky5c2j31kw1cejwy.jpg" target="_blank" rel="noopener">网友透露的圈钱史导图，真假不明</a></p></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><hr></p><p class="description"><b>神童说：</b><br>干货很多的录音</p><hr><p></p><a id="more"></a>        <div id="aplayer-oIlZZiLH" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-oIlZZiLH"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "录音门",              author: "李笑来",              url: "https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/m4a/%E6%9D%8E%E7%AC%91%E6%9D%A5%E7%BB%9D%E5%AF%86%E5%BD%95%E9%9F%B3.m4a",              pic: "https://ws4.sinaimg.cn/large/006tNc79gy1fsxlzdvsdzj30ks0io3zl.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><hr><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold"><p><a href="https://ws2.sinaimg.cn/large/006tNbRwly1fw5i5ky5c2j31kw1cejwy.jpg" target="_blank" rel="noopener">网友透露的圈钱史导图，真假不明</a></p></div></div>]]></content>
     
     <summary type="html">
     
