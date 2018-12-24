@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://coinshen.com/"/>
-  <updated>2018-10-11T16:52:03.309Z</updated>
+  <updated>2018-10-11T13:32:54.186Z</updated>
   <id>https://coinshen.com/</id>
   
   <author>
@@ -15,48 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Macbook操作手册，强迫症必备</title>
-    <link href="https://coinshen.com/2018/10/11/macbook-handbook.html"/>
-    <id>https://coinshen.com/2018/10/11/macbook-handbook.html</id>
-    <published>2018-10-11T13:53:51.000Z</published>
-    <updated>2018-10-11T16:52:03.309Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><hr></p><p class="description"><b>神童说：</b><br>我最得力的杠杆工具</p><hr><p></p><a id="more"></a><h2 id="Mac一次性更改所有文件夹的显示选项"><a href="#Mac一次性更改所有文件夹的显示选项" class="headerlink" title="Mac一次性更改所有文件夹的显示选项"></a>Mac一次性更改所有文件夹的显示选项</h2><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold"><ol start="0"><li><p>打开Finder，使劲点击“⌘+↑”数次，直到没反应可查看到磁盘的图标为止；</p></li><li><p>选择需要的显示类型(图标：⌘+1；列表：⌘+2；分栏：⌘+3)，再按<code>⌘+J</code>，或者点击工具栏的小齿轮，打开“查看显示选项”；</p></li><li><p>在显示选项内调整好自己想要的效果，笔者这里设置为“始终以列表显示方式打开”、“字体大小14”等若干后点击下方“用作默认”；</p></li><li><p>打开Launchpad-其他-终端，打开终端界面输入以下命令，回车后根据提示输入你的账户密码再回车等待即可；<br><code>sudo find / -name .DS_Store -exec rm {} +</code><br>来源 <a href="www.itpwd.com/240.html">www.itpwd.com/240.html</a></p></li><li><p>等待第 3 步完成后，点击左上角小苹果图标选择“强制退出“并进入；</p></li><li><p>在菜单内选择“Finder“后点击”“重新开启”，完成；</p></li></ol><ul><li><a href="https://bbs.feng.com/read-htm-tid-11394952.html" target="_blank" rel="noopener">教程来源在这</a></li></ul></div></div><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;hr&gt;&lt;/p&gt;&lt;p class=&quot;description&quot;&gt;&lt;b&gt;神童说：&lt;/b&gt;&lt;br&gt;我最得力的杠杆工具&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://coinshen.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="效率" scheme="https://coinshen.com/tags/%E6%95%88%E7%8E%87/"/>
-    
-      <category term="Macbook" scheme="https://coinshen.com/tags/Macbook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>李笑来录音门事件</title>
-    <link href="https://coinshen.com/2018/07/04/lixiaolai.html"/>
-    <id>https://coinshen.com/2018/07/04/lixiaolai.html</id>
-    <published>2018-07-04T02:08:17.000Z</published>
-    <updated>2018-10-12T08:13:13.664Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><hr></p><p class="description"><b>神童说：</b><br>干货很多的录音</p><hr><p></p><a id="more"></a>        <div id="aplayer-TYOAJEeA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-TYOAJEeA"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "录音门",              author: "李笑来",              url: "https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/m4a/%E6%9D%8E%E7%AC%91%E6%9D%A5%E7%BB%9D%E5%AF%86%E5%BD%95%E9%9F%B3.m4a",              pic: "https://ws4.sinaimg.cn/large/006tNc79gy1fsxlzdvsdzj30ks0io3zl.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><hr><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold"><p><a href="https://ws2.sinaimg.cn/large/006tNbRwly1fw5i5ky5c2j31kw1cejwy.jpg" target="_blank" rel="noopener">网友透露的圈钱史导图，真假不明</a></p></div></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;hr&gt;&lt;/p&gt;&lt;p class=&quot;description&quot;&gt;&lt;b&gt;神童说：&lt;/b&gt;&lt;br&gt;干货很多的录音&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>工具癖</title>
