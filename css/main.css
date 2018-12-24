@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffcdff;
+  background: #bf4521;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3380,6 +3380,9 @@ h2.love {
   color: #ff71a8;
   -webkit-text-fill-color: unset;
 }
+blockquote {
+  color: #949494;
+}
 blockquote.yy {
   color: #555;
   border-left: 4px solid #1098ad;
@@ -3703,7 +3706,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 17px;
   line-height: 1.75;
-  color: #555;
+  color: #444;
   background: #fff;
 }
 .hider_title {
