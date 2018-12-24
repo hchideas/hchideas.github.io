@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://coinshen.com/talk/lol-yasuo.html</loc>
+    <lastmod>2018-12-24T20:25:46.178Z</lastmod>
+  </url>  <url>
+    <loc>https://coinshen.com/tool/macbook-handbook.html</loc>
+    <lastmod>2018-12-24T19:07:12.039Z</lastmod>
+  </url>  <url>
     <loc>https://coinshen.com/tool/hexo-blog.html</loc>
     <lastmod>2018-12-24T18:48:24.977Z</lastmod>
   </url>  <url>
@@ -18,8 +24,5 @@
   </url>  <url>
     <loc>https://coinshen.com/tool/toolkit.html</loc>
     <lastmod>2018-12-24T18:41:21.191Z</lastmod>
-  </url>  <url>
-    <loc>https://coinshen.com/tool/macbook-handbook.html</loc>
-    <lastmod>2018-12-24T18:39:37.311Z</lastmod>
   </url>
 </urlset>

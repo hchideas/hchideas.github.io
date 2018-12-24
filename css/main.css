@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f754fe;
+  background: #ffcdff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2926,6 +2926,10 @@ h6 {
 .posts-expand .post-body img {
   border: none;
   padding: 0px;
+  margin: 0 auto 0;
+}
+.posts-expand .post-body .fancybox img {
+  margin: 0 auto;
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
@@ -3580,7 +3584,7 @@ strong {
   color: #b02222;
 }
 p {
-  margin: 30px 0 30px 0;
+  margin: 1.5em 0 1.5em 0;
 }
 .post-body p a {
   padding: 2px 6px;
@@ -3698,7 +3702,7 @@ body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 17px;
-  line-height: 2;
+  line-height: 1.75;
   color: #555;
   background: #fff;
 }
