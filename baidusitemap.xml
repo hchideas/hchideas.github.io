@@ -1,113 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
     <loc>https://coinshen.com/2016/03/30/xiaoshentong.html</loc>
     <lastmod>2018-10-11T16:55:11.207Z</lastmod>
-    <data>
-        <display>
-        <title>博客功能搭建</title>
-        <pubTime>2016-03-29T19:48:58.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="极客" url="https://coinshen.com/categories/%E6%9E%81%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="Hexo" url="https://coinshen.com/categories/%E6%9E%81%E5%AE%A2/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://coinshen.com/2018/05/27/toolkit.html</loc>
     <lastmod>2018-10-11T13:32:54.186Z</lastmod>
-    <data>
-        <display>
-        <title>工具癖</title>
-        <pubTime>2018-05-27T13:57:55.000Z</pubTime>
-        
-        <tag>效率</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://coinshen.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://coinshen.com/2018/05/03/mnemonics.html</loc>
     <lastmod>2018-10-11T10:02:00.896Z</lastmod>
-    <data>
-        <display>
-        <title>记忆术的一些方法技巧</title>
-        <pubTime>2018-05-02T17:42:30.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="记忆术" url="https://coinshen.com/categories/%E8%AE%B0%E5%BF%86%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://coinshen.com/2018/05/07/English-xiaoshentong.html</loc>
     <lastmod>2018-10-11T10:01:54.621Z</lastmod>
-    <data>
-        <display>
-        <title>从时与态的思维模式出发去造句</title>
-        <pubTime>2018-05-06T16:41:03.000Z</pubTime>
-        
-        <tag>思维</tag>
-         
-         
-           
-             
-              <breadCrumb title="学英语" url="https://coinshen.com/categories/%E5%AD%A6%E8%8B%B1%E8%AF%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://coinshen.com/2018/05/12/niu.html</loc>
     <lastmod>2018-10-11T10:01:47.963Z</lastmod>
-    <data>
-        <display>
-        <title>听神童吹牛</title>
-        <pubTime>2018-05-12T15:43:08.000Z</pubTime>
-        
-        <tag>思维</tag>
-         
-         
-           
-             
-              <breadCrumb title="投资" url="https://coinshen.com/categories/%E6%8A%95%E8%B5%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-    
-    
+  </url>
 </urlset>
