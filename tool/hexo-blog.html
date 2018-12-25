@@ -168,7 +168,7 @@
 
 
   <meta name="description" content="开始博客之旅。">
-<meta name="keywords" content="小神童,比特币,区块链,币圏,链圈,黄传辉,杠杆达人">
+<meta name="keywords" content="sage">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客功能搭建">
 <meta property="og:url" content="https://coinshen.com/tool/hexo-blog.html">
@@ -183,7 +183,7 @@
 <meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/1f47b.png?v8">
 <meta property="og:image" content="https://yixiuer.oss-cn-shanghai.aliyuncs.com/biaoqingbao/lalala.gif">
 <meta property="og:image" content="https://coinshen-1256425434.cos.ap-shanghai.myqcloud.com/2018-04-20-032913.jpg">
-<meta property="og:updated_time" content="2018-12-25T17:59:20.678Z">
+<meta property="og:updated_time" content="2018-12-25T18:17:15.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客功能搭建">
 <meta name="twitter:description" content="开始博客之旅。">
@@ -520,6 +520,22 @@
         <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note default"><p>开始博客之旅。</p></div>
 
 <a id="more"></a>
+<h2 id="Hexo–设置首页隐藏指定文章"><a href="#Hexo–设置首页隐藏指定文章" class="headerlink" title="Hexo–设置首页隐藏指定文章"></a>Hexo–设置首页隐藏指定文章</h2><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold">
+<p><code>只是不在首页显示，其他地方均可见</code></p>
+<p><strong>第一步、</strong></p>
+<p>自定义 front-matter 的参数，ront-matter 就是每次 hexo new “post_name” 创建的文章里面的开头。<br>例如，自定义添加一个 notshow 参数，值为 true，用来提供判断</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">《好好学习》</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">mask</span></span><br><span class="line"><span class="attr">notshow:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p><strong>第二步、</strong></p>
+<p>修改主题的 index.swig<br>路径：<code>Hexo\themes\next\layout\index.swig</code></p>
+<p>把这里</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">section</span> <span class="attr">id</span>=<span class="string">"posts"</span> <span class="attr">class</span>=<span class="string">"posts-expand"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">  </span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> '_partials/pagination.swig' %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %</span></span><br></pre></td></tr></table></figure>
+<p>改成</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> content %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">section</span> <span class="attr">id</span>=<span class="string">"posts"</span> <span class="attr">class</span>=<span class="string">"posts-expand"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> post <span class="keyword">in</span> page.posts %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> post.notshow != true %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">            </span><span class="template-variable">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">  </span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> '_partials/pagination.swig' %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>在 for 循环迭代文章中判断文章中的属性 notshow，如果不为 true 就打印出文章。所以在需要隐藏的文章 front-matter 中添加 notshow:true 就可以了。</p>
+
+</div></div>
+<hr>
+
 <h2 id="hexo博客常用插件及教程"><a href="#hexo博客常用插件及教程" class="headerlink" title="hexo博客常用插件及教程"></a>hexo博客常用插件及教程</h2><p><a href="https://blog.csdn.net/q2158798/article/details/82354154" target="_blank" rel="external nofollow">传送门</a></p>
 <h2 id="侧边栏的关闭"><a href="#侧边栏的关闭" class="headerlink" title="侧边栏的关闭"></a>侧边栏的关闭</h2><p>参考：<a target="_blank" rel="external nofollow" href="https://github.com/iissnan/hexo-theme-next/issues/947">Issue #947</a></p>
 <p>打开　<code>\themes\next\source\js\src\motion.js</code></p>
@@ -770,6 +786,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/sage/" rel="tag"><i class="fa fa-tag"></i> sage</a>
+          
+        </div>
+      
 
       
       
@@ -919,9 +941,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -944,7 +964,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1053,7 +1075,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo博客常用插件及教程"><span class="nav-number">1.</span> <span class="nav-text">hexo博客常用插件及教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏的关闭"><span class="nav-number">2.</span> <span class="nav-text">侧边栏的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何修改内容区域宽度"><span class="nav-number">3.</span> <span class="nav-text">如何修改内容区域宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件最上方的参数"><span class="nav-number">4.</span> <span class="nav-text">文件最上方的参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片效果"><span class="nav-number">5.</span> <span class="nav-text">图片效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用-emoji"><span class="nav-number">6.</span> <span class="nav-text">如何使用 emoji</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐和视频"><span class="nav-number">7.</span> <span class="nav-text">插入音乐和视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">7.1.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">7.2.</span> <span class="nav-text">视频</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊地写作样式"><span class="nav-number">8.</span> <span class="nav-text">特殊地写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-FontAwesome"><span class="nav-number">8.1.</span> <span class="nav-text">主题自带样式 FontAwesome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-代码块高亮"><span class="nav-number">8.2.</span> <span class="nav-text">主题自带样式 代码块高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带文本居中引用"><span class="nav-number">8.3.</span> <span class="nav-text">自带文本居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-note-标签"><span class="nav-number">8.4.</span> <span class="nav-text">主题自带样式 note 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-label-标签"><span class="nav-number">8.5.</span> <span class="nav-text">自带样式 label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-tabs-标签"><span class="nav-number">8.6.</span> <span class="nav-text">自带样式 tabs 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-按钮"><span class="nav-number">8.7.</span> <span class="nav-text">自带样式 按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-引用"><span class="nav-number">8.8.</span> <span class="nav-text">自定义样式 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-数字块"><span class="nav-number">8.9.</span> <span class="nav-text">自定义样式 数字块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注脚"><span class="nav-number">8.10.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-教程"><span class="nav-number">8.11.</span> <span class="nav-text">Markdown 教程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo–设置首页隐藏指定文章"><span class="nav-number">1.</span> <span class="nav-text">Hexo–设置首页隐藏指定文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo博客常用插件及教程"><span class="nav-number">2.</span> <span class="nav-text">hexo博客常用插件及教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏的关闭"><span class="nav-number">3.</span> <span class="nav-text">侧边栏的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何修改内容区域宽度"><span class="nav-number">4.</span> <span class="nav-text">如何修改内容区域宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件最上方的参数"><span class="nav-number">5.</span> <span class="nav-text">文件最上方的参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片效果"><span class="nav-number">6.</span> <span class="nav-text">图片效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用-emoji"><span class="nav-number">7.</span> <span class="nav-text">如何使用 emoji</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐和视频"><span class="nav-number">8.</span> <span class="nav-text">插入音乐和视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">8.1.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">8.2.</span> <span class="nav-text">视频</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊地写作样式"><span class="nav-number">9.</span> <span class="nav-text">特殊地写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-FontAwesome"><span class="nav-number">9.1.</span> <span class="nav-text">主题自带样式 FontAwesome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-代码块高亮"><span class="nav-number">9.2.</span> <span class="nav-text">主题自带样式 代码块高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带文本居中引用"><span class="nav-number">9.3.</span> <span class="nav-text">自带文本居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题自带样式-note-标签"><span class="nav-number">9.4.</span> <span class="nav-text">主题自带样式 note 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-label-标签"><span class="nav-number">9.5.</span> <span class="nav-text">自带样式 label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-tabs-标签"><span class="nav-number">9.6.</span> <span class="nav-text">自带样式 tabs 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自带样式-按钮"><span class="nav-number">9.7.</span> <span class="nav-text">自带样式 按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-引用"><span class="nav-number">9.8.</span> <span class="nav-text">自定义样式 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义样式-数字块"><span class="nav-number">9.9.</span> <span class="nav-text">自定义样式 数字块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注脚"><span class="nav-number">9.10.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-教程"><span class="nav-number">9.11.</span> <span class="nav-text">Markdown 教程</span></a></li></ol></li></ol></div>
             
 
           </div>
