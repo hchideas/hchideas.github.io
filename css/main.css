@@ -224,7 +224,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 20px 0 15px;
+  margin: 15px 0 15px;
 }
 h1 {
   font-size: 22px;
@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b9ffa3;
+  background: #df702e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2744,7 +2744,7 @@ embed {
   padding-bottom: 0px;
 }
 .posts-expand {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 .posts-expand .post-meta {
   margin: 5px 0px 0px 0px;
@@ -2799,7 +2799,7 @@ embed {
 }
 .post {
   margin: 10px 0;
-  padding: 3px 36px 10px 36px;
+  padding: 3px 36px 13px 36px;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.02);
   background-color: #fff;
   text-align: justify;
@@ -2871,7 +2871,7 @@ embed {
   color: #fff;
 }
 .footer {
-  line-height: 1.5;
+  line-height: 1.4;
   background-color: rgba(255,255,255,0.75);
   color: #333;
   border-top-width: 1px;
@@ -2918,6 +2918,9 @@ embed {
 }
 .v .vlist .vcard {
   margin: 0 10px 0 10px;
+}
+.v .veditor {
+  min-height: 1.75em;
 }
 a {
   color: #5073b8;
@@ -3471,7 +3474,8 @@ code.description {
     font-size: 10px;
   }
   .post {
-    padding: 5px 20px 15px !important;
+    margin: 10px 0;
+    padding: 15px 20px 15px !important;
   }
   .post-body h2,
   h3,
@@ -3479,9 +3483,6 @@ code.description {
   h5,
   h6 {
     color: #007dc5;
-    margin-left: -15px;
-    padding-left: 25px;
-    margin-bottom: 25px;
   }
   .post-body p {
     margin: 18px 0 18px 0;
