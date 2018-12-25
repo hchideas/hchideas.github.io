@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #54e0cf;
+  background: #161dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2912,6 +2912,12 @@ embed {
 }
 .v .txt-right {
   margin: 0px 10px;
+}
+.v .vinfo .col {
+  margin: 0 0 0 10px;
+}
+.v .vlist .vcard {
+  margin: 0 10px 0 10px;
 }
 a {
   color: #5073b8;
