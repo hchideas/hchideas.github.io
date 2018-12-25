@@ -458,22 +458,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-26 00:06:46" itemprop="dateModified" datetime="2018-12-26T00:06:46+08:00">2018-12-26</time>
-              
-            
           </span>
 
           
@@ -506,7 +490,7 @@
                  <span>℃</span>
              </span>
           
-
+        
           
 
           
@@ -526,7 +510,7 @@
       
 
       
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>哈喽～我是黄传辉 😸️<br>一生凭借“黄氏杠杆”走天涯。</p>
+        <p>哈喽～我是黄传辉 😸️<br>一生凭借“黄氏杠杆”走天涯。</p>
 <a id="more"></a>
 <p>如果你想了解如何在<code>健康-家庭-社交-工作-投资</code>中巧借杠杆完成跃迁，提升个人竞争力，欢迎来我的微信公众号“少数人的早餐”啃早点。</p>
 <p>我特地开辟了这个“心里话”板块，每天写一些碎碎念，只开放给微信生态上的朋友。</p>
@@ -1054,7 +1038,7 @@ show_date_time();
         avatar:'wavatar',
         meta:guest,
         pageSize:'10' || 10,
-        visitor: true
+        visitor: false
     });
   </script>
 
@@ -1387,6 +1371,70 @@ show_date_time();
 
 
   
+
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
+                .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function () {
+                  console.log('Failed to create');
+                });
+            
+          }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz",
+                'X-LC-Key': "OiF6Yf4DGA2dvlDSebmzDaSo",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
+    });
+  </script>
+
+
 
   
 
