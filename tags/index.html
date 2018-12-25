@@ -480,13 +480,11 @@
                   
                 
                   
-                    
-                  
                 
-                目前共计 7 个标签
+                目前共计 6 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 13px; color: #9733ee">Hexo</a> <a href="/tags/Macbook/" style="font-size: 13px; color: #9733ee">Macbook</a> <a href="/tags/广告/" style="font-size: 13px; color: #9733ee">广告</a> <a href="/tags/思维/" style="font-size: 31px; color: #ff512f">思维</a> <a href="/tags/效率/" style="font-size: 31px; color: #ff512f">效率</a> <a href="/tags/杂谈/" style="font-size: 13px; color: #9733ee">杂谈</a> <a href="/tags/道/" style="font-size: 13px; color: #9733ee">道</a>
+              <a href="/tags/Hexo/" style="font-size: 13px; color: #9733ee">Hexo</a> <a href="/tags/Macbook/" style="font-size: 13px; color: #9733ee">Macbook</a> <a href="/tags/广告/" style="font-size: 13px; color: #9733ee">广告</a> <a href="/tags/效率/" style="font-size: 31px; color: #ff512f">效率</a> <a href="/tags/杂谈/" style="font-size: 31px; color: #ff512f">杂谈</a> <a href="/tags/道/" style="font-size: 13px; color: #9733ee">道</a>
             </div>
           </div>
         
@@ -551,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -576,11 +574,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -607,7 +601,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -891,6 +885,31 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz',
+        appKey: 'OiF6Yf4DGA2dvlDSebmzDaSo',
+        placeholder: '你的每一条留言我都会用心看 Just go go ヾﾉ≧∀≦)o',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 
