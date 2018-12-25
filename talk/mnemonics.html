@@ -421,7 +421,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="黄传辉">
-      <meta itemprop="description" content="钻研花钱的艺术">
+      <meta itemprop="description" content="玩转杠杆，方可衣食无忧">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -596,16 +596,33 @@
 
     
       <div>
-        <ul class="post-copyright">
+        <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者： </strong>黄传辉</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     <a href="https://coinshen.com/talk/mnemonics.html" title="记忆术的一些方法技巧">https://coinshen.com/talk/mnemonics.html</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://coinshen.com/talk/mnemonics.html"  aria-label="复制成功！"></i></span>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章<strong>禁制转载</strong>，转发请注明出处！</li>
+    <strong>版权声明： </strong>本博客所有文章<a href="https://coinshen.com/huangchuanhui.html" >禁止转载</a>，转发请注明出处！</li>
 </ul>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制文章链接成功',
+          icon: "success",
+          showConfirmButton: true
+          });
+	    });
+    });  
+</script>
 
       </div>
     
@@ -704,7 +721,7 @@
             </a>
             
               <p class="site-author-name" itemprop="name">黄传辉</p>
-              <p class="site-description motion-element" itemprop="description">钻研花钱的艺术</p>
+              <p class="site-description motion-element" itemprop="description">玩转杠杆，方可衣食无忧</p>
           </div>
 
           
