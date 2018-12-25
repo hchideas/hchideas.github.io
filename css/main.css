@@ -1106,7 +1106,7 @@ pre .javascript .function {
   }
 }
 .comments {
-  margin: 60px 20px 0;
+  margin: 60px 30px 0;
 }
 .tag-cloud {
   text-align: center;
@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d9773e;
+  background: #54e0cf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2874,7 +2874,7 @@ embed {
   line-height: 1.5;
   background-color: rgba(255,255,255,0.75);
   color: #333;
-  border-top-width: 3px;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #a166ab;
 }
@@ -2908,7 +2908,10 @@ embed {
 .comments {
   background-color: #fff;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 10px 0px;
+}
+.v .txt-right {
+  margin: 0px 10px;
 }
 a {
   color: #5073b8;
