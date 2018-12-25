@@ -1957,7 +1957,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff60;
+  background: #e2814d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2807,6 +2807,7 @@ embed {
 .posts-expand .post-title {
   font-size: 26px;
   font-weight: 700;
+  text-align: left;
 }
 .posts-expand .post-title-link {
   color: #2aaadd;
@@ -2816,6 +2817,7 @@ embed {
 }
 .posts-expand .post-meta {
   margin: 10px 0px 20px 0px;
+  text-align: left;
 }
 .posts-expand .post-meta .post-description {
   font-style: normal;
@@ -2843,7 +2845,7 @@ embed {
   background-color: #2b2b2b;
 }
 .text-center {
-  text-align: right;
+  text-align: left;
 }
 .posts-expand .post-eof {
   margin: 0px;
@@ -3562,7 +3564,6 @@ code.description {
 h1 {
   font-size: 28px;
   color: #007dc5;
-  text-align: center;
 }
 h2 {
   font-size: 26px;
