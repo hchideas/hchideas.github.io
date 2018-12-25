@@ -235,8 +235,6 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
-<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -520,18 +518,6 @@
 
           
           
-             <span id="/talk/lixiaolai.html" class="leancloud_visitors" data-flag-title="李笑来录音门事件">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度：</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
 
           
 
@@ -552,16 +538,16 @@
       
 
       
-        <div class="note default"><p>李笑来爆料了很多内幕，值得反复听。</p></div>
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note default"><p>李笑来爆料了很多内幕，值得反复听。</p></div>
 
 <a id="more"></a>
 
-        <div id="aplayer-PHXxejBb" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-ImAODUYC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-PHXxejBb"),
+            element: document.getElementById("aplayer-ImAODUYC"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1093,7 +1079,7 @@ show_date_time();
         appId: '55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz',
         appKey: 'OiF6Yf4DGA2dvlDSebmzDaSo',
         placeholder: '你的每一条留言我都会用心看 Just go go ヾﾉ≧∀≦)o',
-        avatar:'mm',
+        avatar:'wavatar',
         meta:guest,
         pageSize:'10' || 10,
         visitor: false
@@ -1429,70 +1415,6 @@ show_date_time();
 
 
   
-
-  
-  <script>
-    
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
-        .done(function ({ results }) {
-          if (results.length > 0) {
-            var counter = results[0];
-            
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text(counter.time + 1);
-            
-            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
-            
-            .fail(function ({ responseJSON }) {
-                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
-            })
-          } else {
-            
-              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
-                .done(function () {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(1);
-                })
-                .fail(function () {
-                  console.log('Failed to create');
-                });
-            
-          }
-        })
-      .fail(function ({ responseJSON }) {
-        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
-      });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + "55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz")
-        .done(function ({ api_server }) {
-          var Counter = function (method, url, data) {
-            return $.ajax({
-              method: method,
-              url: `https://${api_server}/1.1${url}`,
-              headers: {
-                'X-LC-Id': "55lmkzlg1XBLMq6UU248HgTO-gzGzoHsz",
-                'X-LC-Key': "OiF6Yf4DGA2dvlDSebmzDaSo",
-                'Content-Type': 'application/json',
-              },
-              data: data,
-            });
-          };
-          
-          addCount(Counter);
-          
-        })
-    });
-  </script>
-
-
 
   
 
