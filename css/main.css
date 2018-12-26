@@ -1960,7 +1960,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1460cb;
+  background: #c3df40;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3302,7 +3302,7 @@ img#github-emoji {
 .post-body a {
   color: #5073b8;
   border-bottom: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .post-body a:hover {
   color: #a166ab;
@@ -3310,7 +3310,7 @@ img#github-emoji {
   text-decoration: underline;
 }
 .tag-cloud a {
-  border-bottom: 1px solid #5073b8;
+  border-bottom: none;
   text-decoration: none;
 }
 .tag-cloud a:hover {
@@ -3403,7 +3403,7 @@ h2.love {
   -webkit-text-fill-color: unset;
 }
 blockquote {
-  color: #949494;
+  color: #666;
 }
 blockquote.yy {
   color: #555;
