@@ -1960,7 +1960,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2553ff;
+  background: #28a486;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2803,6 +2803,7 @@ embed {
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.02);
   background-color: #fff;
   text-align: justify;
+  border-bottom: 1px solid #e6e6e6;
 }
 .posts-expand .post-title {
   font-size: 26px;
