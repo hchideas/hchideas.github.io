@@ -1960,7 +1960,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #799af0;
+  background: #01dfa6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2957,14 +2957,14 @@ h6 {
   padding: 3px;
 }
 code {
-  margin: 0px 4px;
+  margin: 0px 0px;
   padding: 2px 4px;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  color: #018477;
+  color: #009688;
   background: #e3f2fd;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 16px;
 }
 .highlight figcaption {
   font-size: 1.2em;
@@ -3602,7 +3602,7 @@ h6 {
 }
 b,
 strong {
-  color: #b02222;
+  color: #be0202;
 }
 p {
   margin: 1.5em 0 1.5em 0;
