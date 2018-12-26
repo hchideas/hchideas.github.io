@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://coinshen.com/music/index.html</loc>
+    
+    <lastmod>2018-12-26T14:55:21.376Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://coinshen.com/categories/index.html</loc>
+    
+    <lastmod>2018-12-26T14:54:56.699Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://coinshen.com/tags/index.html</loc>
     
     <lastmod>2018-12-26T14:39:13.733Z</lastmod>
@@ -19,20 +33,6 @@
     <loc>https://coinshen.com//404.html</loc>
     
     <lastmod>2018-12-26T09:05:54.123Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://coinshen.com/categories/index.html</loc>
-    
-    <lastmod>2018-12-26T09:04:58.712Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://coinshen.com/music/index.html</loc>
-    
-    <lastmod>2018-12-26T09:04:29.935Z</lastmod>
     
   </url>
   
