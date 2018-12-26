@@ -1960,7 +1960,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c7f67c;
+  background: #01f4ac;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2774,7 +2774,7 @@ embed {
   letter-spacing: 3px;
 }
 .site-subtitle {
-  margin: 3px 50px 2px 50px;
+  margin: 3px 8px 2px 8px;
   font-size: 16px;
   letter-spacing: 1px;
   padding-bottom: 11px;
@@ -3525,8 +3525,8 @@ code.description {
   opacity: 0;
 }
 .site-nav-toggle {
-  top: 35px;
-  left: 10px;
+  top: 10px;
+  left: 0px;
 }
 .btn-bar {
   background-color: #fff;
