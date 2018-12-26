@@ -1960,7 +1960,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #12d5ba;
+  background: #ffe84a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2728,9 +2728,6 @@ embed {
 }
 .category-list ul {
   list-style: none;
-}
-.category-list ul li:before {
-  content: '➢ ';
 }
 .headband {
   height: 0.5px;
@@ -3776,6 +3773,30 @@ body {
   src: url("/fonts/LinBiolinum_RIah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_RIah.woff2") format('woff2'), url("/fonts/LinBiolinum_RIah.woff") format('woff'), url("/fonts/LinBiolinum_RIah.ttf") format('truetype');
   font-weight: normal;
   font-style: italic;
+}
+.posts-expand .post-body ul li {
+  list-style: disc;
+}
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 18px;
+  color: #0019ff;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {

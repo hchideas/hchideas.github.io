@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://coinshen.com/about/index.html</loc>
+    
+    <lastmod>2018-12-26T18:07:26.111Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://coinshen.com//404.html</loc>
     
     <lastmod>2018-12-26T15:28:03.645Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>https://coinshen.com/top/index.html</loc>
     
     <lastmod>2018-12-25T14:45:02.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://coinshen.com/about/index.html</loc>
-    
-    <lastmod>2018-12-24T21:45:36.237Z</lastmod>
     
   </url>
   
