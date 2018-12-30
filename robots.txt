@@ -4,11 +4,7 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-
-Disallow: /vendors/
-Disallow: /fonts/
-Disallow: /vendors/
-Disallow: /fancybox/
+Allow: /about/
 
 Sitemap: https://coinshen.com/sitemap.xml
 Sitemap: https://coinshen.com/baidusitemap.xml
